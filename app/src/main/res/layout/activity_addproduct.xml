@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_addproduct"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/backhome"
+    tools:context="com.example.yuvaa.e_krishi.about">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:text="Submit market value along with the crop"
+        android:textAlignment="center"
+        android:textColor="@color/MyWhite"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/wh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="33dp"
+        android:text="Wheat"
+        android:textColor="@color/MyBlack"
+        android:textSize="20sp" />
+
+
+    <TextView
+        android:id="@+id/ri"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="83dp"
+        android:text="Rice"
+        android:textColor="@color/MyBlack"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/co"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="133dp"
+        android:text="Cotton"
+        android:textColor="@color/MyBlack"
+        android:textSize="20sp" />
+
+
+    <TextView
+        android:id="@+id/mi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="183dp"
+        android:text="Millet(Bajra)"
+        android:textColor="@color/MyBlack"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/ma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="233dp"
+        android:text="Maize(Maka)"
+        android:textColor="@color/MyBlack"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/so"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="283dp"
+        android:text="Soybean"
+        android:textColor="@color/MyBlack"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/ra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="333dp"
+        android:text="Ragi"
+        android:textColor="@color/MyBlack"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/valwheat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignBaseline="@+id/wh"
+        android:layout_alignBottom="@+id/wh"
+        android:layout_alignParentEnd="true"
+        android:ems="10"
+        android:hint="per Quintal"
+        android:inputType="numberDecimal"
+        android:textCursorDrawable="@drawable/cursor_color"
+        android:selectAllOnFocus="true"
+        android:textAlignment="center"
+        android:textSize="10sp"
+        android:textStyle="normal|bold"
+        android:typeface="monospace" />
+
+    <EditText
+        android:id="@+id/valsoya"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/so"
+        android:layout_alignBottom="@+id/so"
+        android:layout_alignParentEnd="true"
+        android:textCursorDrawable="@drawable/cursor_color"
+        android:ems="10"
+        android:hint="per Quintal"
+        android:inputType="numberDecimal"
+        android:selectAllOnFocus="true"
+        android:textAlignment="center"
+        android:textSize="10sp"
+        android:textStyle="normal|bold"
+        android:typeface="monospace" />
+
+    <EditText
+        android:id="@+id/valcotton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/co"
+        android:layout_alignBottom="@+id/co"
+        android:layout_alignParentEnd="true"
+        android:textCursorDrawable="@drawable/cursor_color"
+        android:ems="10"
+        android:hint="per Quintal"
+        android:inputType="numberDecimal"
+        android:selectAllOnFocus="true"
+        android:textAlignment="center"
+        android:textSize="10sp"
+        android:textStyle="normal|bold"
+        android:typeface="monospace" />
+
+    <EditText
+        android:id="@+id/valmillet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/mi"
+        android:layout_alignBottom="@+id/mi"
+        android:layout_alignParentEnd="true"
+        android:ems="10"
+        android:hint="per Quintal"
+        android:inputType="numberDecimal"
+        android:textCursorDrawable="@drawable/cursor_color"
+        android:selectAllOnFocus="true"
+        android:textAlignment="center"
+        android:textSize="10sp"
+        android:textStyle="normal|bold"
+        android:typeface="monospace" />
+
+    <EditText
+        android:id="@+id/valmaize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/ma"
+        android:layout_alignBottom="@+id/ma"
+        android:layout_alignParentEnd="true"
+        android:textCursorDrawable="@drawable/cursor_color"
+        android:ems="10"
+        android:hint="per Quintal"
+        android:inputType="numberDecimal"
+        android:selectAllOnFocus="true"
+        android:textAlignment="center"
+        android:textSize="10sp"
+        android:textStyle="normal|bold"
+        android:typeface="monospace" />
+
+    <EditText
+        android:id="@+id/valrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/ri"
+        android:layout_alignBottom="@+id/ri"
+        android:layout_alignParentEnd="true"
+        android:ems="10"
+        android:hint="per Quintal"
+        android:inputType="numberDecimal"
+        android:textCursorDrawable="@drawable/cursor_color"
+        android:selectAllOnFocus="true"
+        android:textAlignment="center"
+        android:textSize="10sp"
+        android:textStyle="normal|bold"
+        android:typeface="monospace" />
+
+    <EditText
+        android:id="@+id/valragi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/ra"
+        android:layout_alignBottom="@+id/ra"
+        android:layout_alignParentEnd="true"
+        android:ems="10"
+        android:hint="per Quintal"
+        android:textCursorDrawable="@drawable/cursor_color"
+        android:inputType="numberDecimal"
+        android:selectAllOnFocus="true"
+        android:textAlignment="center"
+        android:textSize="10sp"
+        android:textStyle="normal|bold"
+        android:typeface="monospace" />
+
+    <Button
+        android:id="@+id/cropsubmit"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:fontFamily="sans-serif-medium"
+        android:text="SUBMIT"
+        android:textSize="20sp"
+        android:typeface="normal"
+        android:visibility="visible" />
+
+</RelativeLayout>

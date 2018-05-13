@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/backhome"
+    tools:context="com.example.yuvaa.e_krishi.login">
+
+        <TabHost
+            android:layout_width="350dip"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/tabhost"
+            android:layout_alignParentTop="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TabWidget
+                    android:id="@android:id/tabs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <FrameLayout
+                    android:id="@android:id/tabcontent"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/login"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:weightSum="1">
+
+
+                        <EditText
+                            android:id="@+id/logemail"
+                            style="@style/Widget.AppCompat.AutoCompleteTextView"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_weight="0.17"
+                            android:ems="10"
+                            android:hint="@string/prompt_email"
+                            android:textCursorDrawable="@drawable/cursor_color"
+                            android:inputType="textEmailAddress"
+                            android:maxLines="1"
+                            android:selectAllOnFocus="true"
+                            android:singleLine="true"
+                            android:textAlignment="viewStart"
+                            android:textColor="@color/MyBlack"
+                            android:textColorHint="@color/MyBlack"
+                            android:textColorLink="@android:color/darker_gray"
+                            android:textSize="20sp" />
+
+                        <EditText
+                            android:id="@+id/logpass"
+                            style="@style/Widget.AppCompat.AutoCompleteTextView"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_weight="0.20"
+                            android:ems="10"
+                            android:hint="@string/prompt_password"
+                            android:textCursorDrawable="@drawable/cursor_color"
+                            android:imeActionLabel="@string/action_sign_in_short"
+                            android:imeOptions="actionUnspecified"
+                            android:inputType="textPassword"
+                            android:maxLines="1"
+                            android:selectAllOnFocus="true"
+                            android:singleLine="true"
+                            android:textColor="@color/MyBlack"
+                            android:textColorHint="@color/MyBlack"
+                            android:textColorLink="@android:color/darker_gray"
+                            android:textSize="20sp" />
+
+                        <Button
+                            android:text="LOGIN"
+                            android:layout_width="match_parent"
+                            android:id="@+id/blogin"
+                            style="@style/Widget.AppCompat.Button.Borderless"
+                            android:textSize="20sp"
+                            android:fontFamily="sans-serif-medium"
+                            android:typeface="normal"
+                            android:visibility="visible"
+                            android:layout_marginBottom="@dimen/activity_vertical_margin"
+                            android:shadowColor="@android:color/white"
+                            android:textColor="@color/MyBlack"
+                            android:textColorHighlight="@color/MyBlack"
+                            android:layout_height="80dp" />
+
+                        <Button
+                            android:id="@+id/bforgot"
+                            style="@style/Widget.AppCompat.Button.Borderless"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginBottom="@dimen/activity_vertical_margin"
+                            android:fontFamily="sans-serif-medium"
+                            android:shadowColor="@android:color/white"
+                            android:text="Forgot Password?"
+                            android:textAlignment="center"
+                            android:textAllCaps="false"
+                            android:textColor="@color/MyBlack"
+                            android:textColorHighlight="@color/MyBlack"
+                            android:textSize="15sp"
+                            android:typeface="normal"
+                            android:visibility="visible" />
+                    </LinearLayout>
+
+
+
+
+                    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:id="@+id/register"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_weight="0.53">
+
+
+                        <AutoCompleteTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:hint="Name"
+                            android:textSize="17sp"
+                            android:textCursorDrawable="@drawable/cursor_color"
+                            android:textColorHint="@color/MyBlack"
+                            android:textColor="@android:color/black"
+                            android:id="@+id/rname"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:inputType="textEmailAddress"
+                            android:ems="10"
+                            android:id="@+id/remail"
+                            android:hint="@string/prompt_email"
+                            android:textColorHint="@color/MyBlack"
+                            android:textColor="@android:color/black"
+                            android:textAlignment="viewStart"
+                            android:textCursorDrawable="@drawable/cursor_color"
+                            android:selectAllOnFocus="true"
+                            android:textSize="17sp"
+                            android:maxLines="1"
+                            style="@style/Widget.AppCompat.AutoCompleteTextView"
+                            android:textColorLink="@android:color/darker_gray" />
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:inputType="textPassword"
+                            android:hint="@string/prompt_password"
+                            android:textColorHint="@color/MyBlack"
+                            android:textCursorDrawable="@drawable/cursor_color"
+                            android:ems="10"
+                            android:textColor="@android:color/black"
+                            android:id="@+id/rpass"
+                            android:selectAllOnFocus="true"
+                            android:maxLines="1"
+                            android:imeActionLabel="@string/action_sign_in_short"
+                            android:imeOptions="actionUnspecified"
+                            android:textSize="17sp"
+                            style="@style/Widget.AppCompat.AutoCompleteTextView"
+                            android:textColorLink="@android:color/darker_gray" />
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:inputType="number"
+                            android:textCursorDrawable="@drawable/cursor_color"
+                            android:maxLength="11"
+                            android:textColor="@android:color/black"
+                            android:id="@+id/rmo"
+                            android:hint="Mobile No."
+                            android:textSize="17sp"
+                            android:textColorHint="@color/MyBlack"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:hint="Address"
+                            android:textSize="17sp"
+                            android:textCursorDrawable="@drawable/cursor_color"
+                            android:textColorHint="@color/MyBlack"
+                            android:textColor="@android:color/black"
+                            android:id="@+id/radd"/>
+
+
+                        <Spinner
+                            android:id="@+id/rcity"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+
+                        <Button
+                            android:text="REGISTER"
+                            android:layout_width="match_parent"
+                            android:id="@+id/breg"
+                            style="@style/Widget.AppCompat.Button.Borderless"
+                            android:textSize="20sp"
+                            android:fontFamily="sans-serif-medium"
+                            android:typeface="normal"
+                            android:visibility="visible"
+                            android:layout_marginBottom="@dimen/activity_vertical_margin"
+                            android:contextClickable="true"
+                            android:shadowColor="@android:color/white"
+                            android:textColor="@color/MyBlack"
+                            android:textColorHighlight="@color/MyBlack"
+                            android:layout_height="80dp" />
+
+
+
+
+                    </LinearLayout>
+
+
+                </FrameLayout>
+            </LinearLayout>
+        </TabHost>
+
+</RelativeLayout>

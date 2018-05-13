@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="@drawable/backhomex"
+    android:paddingLeft="10dp"
+
+    android:paddingRight="10dp" >
+
+    <TextView
+    android:id="@+id/bdname"
+    android:layout_width="344dp"
+    android:gravity="left"
+    android:textStyle="bold"
+    android:layout_height="wrap_content" />
+
+    <TextView
+    android:id="@+id/bdcrop"
+    android:layout_width="344dp"
+        android:gravity="left"
+        android:textStyle="bold"
+        android:layout_height="wrap_content" />
+
+    <TextView
+    android:id="@+id/bdemail"
+    android:layout_width="344dp"
+        android:gravity="left"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+    android:id="@+id/bdphone"
+    android:layout_width="344dp"
+        android:gravity="left"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+    android:id="@+id/bdcity"
+    android:layout_width="344dp"
+        android:gravity="left"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
